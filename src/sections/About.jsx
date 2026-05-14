@@ -1,9 +1,8 @@
 const About = () => {
-  return (
-    <section className='c-space section-spacing'>
-<<<<<<< HEAD
-        <h2 className='text-heading'>About Me</h2>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18-rem] mt-12'>
+return (
+  <section className='c-space section-spacing'>
+    <h2 className='text-heading'>About Me</h2>
+    <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18-rem] mt-12'>
             {/*Grid 1*/}
             <div className="flex items-end grid-default-color grid-1">
               <img
@@ -17,13 +16,7 @@ const About = () => {
                 </p>
               </div>
               <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-linear-to-t from-indigo"/>
-            </div>
-=======
-        <h2 className='text-heading'>About Me
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18-rem] mt-12'>
-            {/*Grid 1*/}
-            <div className="flex items-end grid-default-color grid-1"></div>
->>>>>>> 23d7b6d275a0d911ad6266e3918709d8e68094d4
+          </div>
             {/*Grid 2*/}
             <div className="grid-default-color grid-2"></div>
             {/*Grid 3*/}
@@ -33,11 +26,7 @@ const About = () => {
             {/*Grid 5*/}
             <div className="grid-default-color grid-5"></div>
         </div>
-<<<<<<< HEAD
-=======
-        </h2>
->>>>>>> 23d7b6d275a0d911ad6266e3918709d8e68094d4
-    </section>
+  </section>
   )
 }
 
