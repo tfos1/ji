@@ -12,7 +12,7 @@ return (
               <div className="z-10">
                 <p className="headtext">Hi! I'm Marc Jian Bacay</p>
                 <p className="subtext">
-                  4th-year CompE student. Passionate about cloud computing, currently crafting the web with HTML, CSS & JavaScript.
+                  4th-year Compputer Engineering student. Passionate about cloud computing, currently crafting the web with HTML, CSS & JavaScript.
                 </p>
               </div>
               <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-linear-to-t from-indigo"/>
