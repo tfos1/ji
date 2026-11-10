@@ -12,13 +12,19 @@ return (
               <div className="z-10">
                 <p className="headtext">Hi! I'm Marc Jian Bacay</p>
                 <p className="subtext">
-                  4th-year Compputer Engineering student. Passionate about cloud computing, currently crafting the web with HTML, CSS & JavaScript.
+                  4th-year Computer Engineering student. Passionate about cloud computing, currently crafting the web with HTML, CSS & JavaScript.
                 </p>
               </div>
               <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-linear-to-t from-indigo"/>
           </div>
             {/*Grid 2*/}
-            <div className="grid-default-color grid-2"></div>
+            <div className="grid-default-color grid-2">
+              <div className="flex items-center justify-center w-full h-full">
+                <p className="flex items-end text-5xl text-gray-500">
+                  ego sbl
+                </p>
+              </div>
+            </div>
             {/*Grid 3*/}
             <div className="grid-black-color grid-3"></div>
             {/*Grid 4*/}
