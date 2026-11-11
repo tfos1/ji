@@ -5,9 +5,9 @@ import About from './sections/About'
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-    <Navbar />
-    <Hero />
-    <About />
+      <Navbar />
+      <Hero />
+      <About />
     </div>
   )
 }

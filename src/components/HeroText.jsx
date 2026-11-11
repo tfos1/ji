@@ -29,13 +29,13 @@ const HeroText = () => {
                     >
                         Designing a
                 </motion.p>
-                <motion.p className="text-8xl font-black text-violet-300"
+                <motion.div className="text-8xl font-black text-violet-300"
                     variants={variants}
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.5}}>
                         <FlipWords words={cyber}/>
-                </motion.p>
+                </motion.div>
             </motion.div>
                 <motion.p className="text-4xl font-medium text-neutral-300"
                     variants={variants}
@@ -66,14 +66,15 @@ const HeroText = () => {
                         Designing a
                 </motion.p>
             <motion.div>
-                <motion.p className="text-7xl font-black text-violet-300"
+                {/* ✅ FIXED: Changed <motion.p> to <motion.div> */}
+                <motion.div className="text-7xl font-black text-violet-300"
                 variants={variants}
                 initial="hidden"
                 animate="visible"
                 transition={{delay:1.5}}
                 >
                     <FlipWords words={cyber}/>
-                </motion.p>
+                </motion.div>
             </motion.div>
                 <motion.p className="text-4xl font-medium text-neutral-300"
                 variants={variants}
