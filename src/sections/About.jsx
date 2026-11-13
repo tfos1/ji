@@ -25,11 +25,21 @@ return (
                 <p className="flex items-end text-5xl text-gray-500">
                   CLOUD COMPUTING
                 </p>
-                <Card text="Linux" />
-                <Card text="Git" />
-                <Card text="Docker" />
-                <Card text="AWS" />
-                <Card text="CI/CD" />
+                <Card 
+                style={{ rotate: "70deg", top: "75%", left: "20%",}} 
+                text="Linux" />
+                <Card 
+                style={{ rotate: "-23deg", top: "60%", left:"45%" }} 
+                text="Git" />
+                <Card 
+                style={{ rotate: "40deg", top: "18%", left:"70%" }} 
+                text="Docker" />
+                <Card 
+                style={{ rotate: "-30deg", top: "20%", left:"0%" }} 
+                text="AWS" />
+                <Card 
+                style={{ rotate: "20deg", top: "10%", left:"40%" }} 
+                text="CI/CD" />
               </div>
             </div>
             {/*Grid 3*/}
