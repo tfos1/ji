@@ -40,6 +40,26 @@ return (
                 <Card 
                 style={{ rotate: "20deg", top: "10%", left:"40%" }} 
                 text="CI/CD" />
+                <Card 
+                style={{ rotate: "70deg", top: "78%", left:"24%" }} 
+                image="assets\logos\linux.png"
+                />
+                <Card 
+                style={{ rotate: "-23deg", top: "78%", left:"60%" }} 
+                image="assets\logos\git.png"
+                />
+                <Card 
+                style={{ rotate: "40deg", top: "33%", left:"76%" }} 
+                image="assets\logos\docker.png"
+                />
+                <Card 
+                style={{ rotate: "-30deg", top: "37%", left:"15%" }} 
+                image="assets\logos\aws.png"
+                />
+                <Card 
+                style={{ rotate: "-30deg", top: "30%", left:"48%" }} 
+                image="assets\logos\gitlab.png"
+                />
               </div>
             </div>
             {/*Grid 3*/}
