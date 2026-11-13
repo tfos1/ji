@@ -1,6 +1,8 @@
+import { useRef } from "react";
 import Card from "../components/Card"
 
 const About = () => {
+  const grid2Container = useRef();
 return (
   <section className='c-space section-spacing'>
     <h2 className='text-heading'>About Me</h2>
@@ -21,44 +23,59 @@ return (
           </div>
             {/*Grid 2*/}
             <div className="grid-default-color grid-2">
-              <div className="flex items-center justify-center w-full h-full">
+              <div ref={grid2Container} className="flex items-center justify-center w-full h-full">
                 <p className="flex items-end text-5xl text-gray-500">
                   CLOUD COMPUTING
                 </p>
                 <Card 
                 style={{ rotate: "70deg", top: "75%", left: "20%",}} 
-                text="Linux" />
+                text="Linux"
+                containerRef = {grid2Container}
+                />
                 <Card 
                 style={{ rotate: "-23deg", top: "60%", left:"45%" }} 
-                text="Git" />
+                text="Git"
+                containerRef = {grid2Container}
+                />
                 <Card 
                 style={{ rotate: "40deg", top: "18%", left:"70%" }} 
-                text="Docker" />
+                text="Docker"
+                containerRef = {grid2Container}
+                />
                 <Card 
                 style={{ rotate: "-30deg", top: "20%", left:"0%" }} 
-                text="AWS" />
+                text="AWS" 
+                containerRef = {grid2Container}
+                />
                 <Card 
                 style={{ rotate: "20deg", top: "10%", left:"40%" }} 
-                text="CI/CD" />
+                text="CI/CD"
+                containerRef = {grid2Container}
+                />
                 <Card 
                 style={{ rotate: "70deg", top: "78%", left:"24%" }} 
                 image="assets\logos\linux.png"
+                containerRef = {grid2Container}
                 />
                 <Card 
                 style={{ rotate: "-23deg", top: "78%", left:"60%" }} 
                 image="assets\logos\git.png"
+                containerRef = {grid2Container}
                 />
                 <Card 
                 style={{ rotate: "40deg", top: "33%", left:"76%" }} 
                 image="assets\logos\docker.png"
+                containerRef = {grid2Container}
                 />
                 <Card 
                 style={{ rotate: "-30deg", top: "37%", left:"15%" }} 
                 image="assets\logos\aws.png"
+                containerRef = {grid2Container}
                 />
                 <Card 
                 style={{ rotate: "-30deg", top: "30%", left:"48%" }} 
                 image="assets\logos\gitlab.png"
+                containerRef = {grid2Container}
                 />
               </div>
             </div>
