@@ -2,7 +2,7 @@ import { FlipWords } from "./FlipWords"
 import {motion} from "motion/react"
 
 const HeroText = () => {
-    const cyber = ["Secure", "Robust", "Resilient", "Encrypted", "Hardened", "Impenetrable", "Fortified"]
+    const cloud = ["Scalable", "Resilient", "Cloud-native", "Serverless", "Multi-cloud", "Secure", "Cost-effective"]
     const variants = {
         hidden: {opacity:0, x:50},
         visible: {opacity:1, x:0},
@@ -34,7 +34,7 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.5}}>
-                        <FlipWords words={cyber}/>
+                        <FlipWords words={cloud}/>
                 </motion.div>
             </motion.div>
                 <motion.p className="text-4xl font-medium text-neutral-300"
@@ -42,7 +42,7 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.8}}>
-                    Cybersecurity Systems
+                    Cloud Architecture
                 </motion.p>
         </div>
     </div>
@@ -73,7 +73,7 @@ const HeroText = () => {
                 animate="visible"
                 transition={{delay:1.5}}
                 >
-                    <FlipWords words={cyber}/>
+                    <FlipWords words={cloud}/>
                 </motion.div>
             </motion.div>
                 <motion.p className="text-4xl font-medium text-neutral-300"
@@ -82,7 +82,7 @@ const HeroText = () => {
                 animate="visible"
                 transition={{delay:1.8}}
                 >
-                    Cybersecurity Systems
+                    Cloud Architecture
                 </motion.p>
             </motion.div>
         </div>
