@@ -1,9 +1,24 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Card from "../components/Card"
 import { Globe } from "../components/Globe";
 
 const About = () => {
   const grid2Container = useRef();
+  const [philippinesTime, setPhilippinesTime] = useState(() => new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => setPhilippinesTime(new Date()), 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const formattedPhilippinesTime = new Intl.DateTimeFormat("en-PH", {
+    timeZone: "Asia/Manila",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  }).format(philippinesTime);
+
 return (
   <section className='c-space section-spacing'>
     <h2 className='text-heading'>About Me</h2>
@@ -83,13 +98,23 @@ return (
             {/*Grid 3*/}
             <div className="grid-black-color grid-3">
               <div className="z-10 w-[50%]">
-                <p className="headtext">Time Zone</p>
+                <div className="flex flex-wrap items-baseline gap-x-3">
+                  <p className="headtext">Time Zone</p>
+                  <time
+                    className="text-sm text-black bg-white px-2 py-0.5 rounded tabular-nums"
+                    dateTime={philippinesTime.toISOString()}
+                    aria-label={`Current time in the Philippines: ${formattedPhilippinesTime} PHT`}
+                  >
+                    {formattedPhilippinesTime} PHT
+                  </time>
+                </div>
                 <p className="subtext">
-                  I'm based in Philippines, and open to remote work
+                  Based in the Philippines. Flexible for on-site, hybrid, or global remote work.
                 </p>
               </div>
-              <figure className="absoulte left-[30%] top-[10%}"></figure>
-              <Globe />
+              <figure className="absolute left-[30%] top-[10%]">
+                <Globe />
+              </figure>
             </div>
             {/*Grid 4*/}
             <div className="grid-special-color grid-4"></div>
